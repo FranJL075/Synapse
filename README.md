@@ -1,4 +1,4 @@
-# Synapse
+# Synapse256
 
 ![image](https://user-images.githubusercontent.com/63260839/192121859-9cc65987-f4a9-4af1-9229-cc4421fc07b6.png)
 
