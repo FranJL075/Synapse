@@ -1,4 +1,4 @@
-# Synapse256
+# Synapse
 #Proyecto Final Ecommerce - Trabajo Integrador ISPC 2023
 [![trabajo-en-equipo-1024x950.jpg](https://i.postimg.cc/HLYpChcn/trabajo-en-equipo-1024x950.jpg)](https://postimg.cc/XrPMfxg6)
 
