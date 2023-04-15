@@ -13,7 +13,7 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 •	Osorio Duarte, Cintia 
   https://github.com/CintiaOsorioDuartesakura
 
-•	Isaias Ramos
+•	Isaias Ramos www.github.com/isaiasruben4912
 
 •	Giselle Chaumont Mohr <br>
 
