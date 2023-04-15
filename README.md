@@ -13,7 +13,7 @@ Isaias Ramos	<br>
 Giselle Chaumont Mohr <br>
 Aisha Amaya	<br>
 Jonatan Acuña 	<br>
-Narvaez,Juan Carlos <br>
+Juan Carlos Narvaez <br>
 Daniela Schejtman <br>
 
 ## Objetivos del trabajo
