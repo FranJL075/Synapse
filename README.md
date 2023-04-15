@@ -8,19 +8,25 @@
 Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin de continuar con el proyecto del año pasado y dandole continuación en esta oportunidad, mediante un modulo e-commerce.
 
 ## Los Integrantes del equipo Somos:
-
-Francisco Ignacio	Junco Lasagno <br>
+•	Francisco Ignacio	Junco Lasagno  https://github.com/FranciscoMartinez33
+  
 •	Osorio Duarte, Cintia 
   https://github.com/CintiaOsorioDuartesakura
 
-Isaias Ramos	<br>
-Giselle Chaumont Mohr <br>
-Aisha Amaya	<br>
-Jonatan Acuña 	<br>
+•	Isaias Ramos
+
+•	Giselle Chaumont Mohr <br>
+
+•	Aisha Amaya	
+
+•	Jonatan Acuña
+
 •	Schejtman, Daniela
   https://github.com/danielasch00
+  
 •	Narvaez, Juan Carlos 
   https://github.com/ProgramadorPegasus
+  
 •	Vera, Emilio Andres
   https://github.com/evera8
 
