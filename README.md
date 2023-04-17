@@ -15,7 +15,7 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 •	Isaias Ramos www.github.com/isaiasruben4912
 
-•	Giselle Chaumont Mohr <br>
+•	Giselle Chaumont Mohr https://github.com/gisellechaumont
 
 •	Aisha Amaya	
 
