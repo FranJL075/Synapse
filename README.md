@@ -19,7 +19,7 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 •	Aisha Amaya	
 
-•	Jonatan Acuña
+•	Jonatan Acuña: https://github.com/yoniea
 
 •	Schejtman, Daniela
   https://github.com/danielasch00
