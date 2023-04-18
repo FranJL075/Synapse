@@ -17,7 +17,7 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 •	Giselle Chaumont Mohr https://github.com/gisellechaumont
 
-•	Aisha Amaya	
+•	Aisha Amaya	: https://github.com/AishaAmaya
 
 •	Jonatan Acuña: https://github.com/yoniea
 
