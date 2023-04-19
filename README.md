@@ -10,7 +10,7 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 ## Los Integrantes del equipo Somos:
 •	Francisco Ignacio	Junco Lasagno  https://github.com/FranciscoMartinez33
   
-•	Osorio Duarte, Cintia 
+•	 Cintia Osorio Duarte
   https://github.com/CintiaOsorioDuartesakura
 
 •	Isaias Ramos www.github.com/isaiasruben4912
@@ -21,13 +21,13 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 •	Jonatan Acuña: https://github.com/yoniea
 
-•	Schejtman, Daniela
+•	 Daniela Schejtman
   https://github.com/danielasch00
   
-•	Narvaez, Juan Carlos 
+•	 Juan Carlos Narvaez
   https://github.com/ProgramadorPegasus
   
-•	Vera, Emilio Andres
+•	 Emilio Andres Vera
   https://github.com/evera8
 
 ## Objetivos del trabajo
