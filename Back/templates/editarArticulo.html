@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- css estilos -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <script src="https://kit.fontawesome.com/e52ffa0f4a.js" crossorigin="anonymous"></script>
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="Css/styles.css">
+  <title>Inicio</title>
+</head>
+
+<body style="background-color:#1FAB89 ;">
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-9">            
+            <form method="POST" action="/ActualizarArticulo/{{articulosEditar.0}}">                     
+                <div class="p-3 mt-5">
+                    <div class="form-group row">                             
+                        <div class="container">
+                            <h2 class="mb-3">
+                                <span style="color:#fff; border-radius: 20px; background-color:#FFD24C;" class="ps-3 pe-3 pb-1">Editar artículo</span>
+                            </h2>  
+                            <div class="row"> 
+                                <div class="col-md-9 col-lg-4 mb-2">
+                                    <label class="form-label fw-bold text-white">Nombre del articulo</label>
+                                    <input value="{{articulosEditar.1}}" name="Titulo" class="form-control" />
+                                    
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-6">                                  
+                                    <label  class="form-label fw-bold text-white">Descripción del artículo</label>
+                                <br>
+                                <input type="text" value="{{articulosEditar.2}}" name="Texto" rows="5" cols="50" class="form-control"/>                                                                 
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label  class="form-label fw-bold text-white">Creado (Fecha)</label>
+                                    <input value="{{articulosEditar.3}}" type="datetime" name="Fecha" class="form-control" />                              
+                                </div>
+                            </div>
+    
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label  class="form-label fw-bold text-white">Categoría</label>
+                                    <input value="{{articulosEditar.4}}" name="Categoria" class="form-control" />                              
+                                </div>
+                            </div>
+    
+                            <div class="row mb-2">
+                                <div class="col-md-4">
+                                    <label  class="form-label fw-bold text-white">Administrador</label>
+                                    <input value="{{articulosEditar.5}}"  name="Administrador" class="form-control" />                              
+                                </div>
+                            </div>
+            
+                            <button type="submit" class="btn btn-warning me-1 mt-2">Editar</button>
+                            <a class="btn btn-secondary mt-2" href="/AgregarArticulo">Regresar</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<footer id="footer">
+    <p>© Copyright DT-2022 DatAsk</p>
+</footer>
+</body>
+
+</html>
