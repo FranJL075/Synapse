@@ -4,23 +4,17 @@
 [![trabajo-en-equipo-1024x950.jpg](https://i.postimg.cc/HLYpChcn/trabajo-en-equipo-1024x950.jpg)](https://postimg.cc/XrPMfxg6)
 Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin de continuar con el proyecto del año pasado y dandole continuación en esta oportunidad, mediante un modulo e-commerce.
 ## Los Integrantes del equipo Somos:
-•	Francisco Ignacio	Junco Lasagno  https://github.com/FranciscoMartinez33
+•	 Francisco Ignacio	Junco Lasagno  https://github.com/FranciscoMartinez33
 
-•	 Cintia Osorio Duarte
-  https://github.com/CintiaOsorioDuartesakura
+•	 Cintia Osorio Duarte https://github.com/CintiaOsorioDuartesakura
 
-•	Isaias Ramos www.github.com/isaiasruben4912
-	@@ -21,13 +21,13 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin
+•	 Isaias Ramos https://github.com/isaiasruben4912
+•	 Jonatan Acuña: https://github.com/yoniea
 
-•	Jonatan Acuña: https://github.com/yoniea
+•	 Daniela Schejtman https://github.com/danielasch00
 
-•	 Daniela Schejtman
-  https://github.com/danielasch00
+•	 Juan Carlos Narvaez https://github.com/ProgramadorPegasus
 
-•	 Juan Carlos Narvaez
-  https://github.com/ProgramadorPegasus
-
-•	 Emilio Andres Vera
-  https://github.com/evera8
+•	 Emilio Andres Vera https://github.com/evera8
 
 ## Objetivos del trabajo
