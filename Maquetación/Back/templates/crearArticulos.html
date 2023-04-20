@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- css estilos -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <script src="https://kit.fontawesome.com/e52ffa0f4a.js" crossorigin="anonymous"></script>
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="Css/styles.css">
+  <title>Inicio</title>
+</head>
+<body style="background-color:#1FAB89;">
+    
+    {% with mensajeFlash=get_flashed_messages() %}
+    {% if mensajeFlash %}
+    {% for item in mensajeFlash %}
+    <p style="color:#FFD24C; font-weight:bolder;margin-left: 1%;">{{item}}</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <div class="row">   
+        <div class="col-md-6">
+            <form method="POST" action="/AgregarArticulo">    
+                <div class="p-3">
+                    <div class="form-group row">
+                        <h2><span class="text-bg-warning text-white ms-3 pb-1 ps-2 pe-2 " style="border-radius:20px ;">Crear nuevo articulo</span></h2>
+            
+                        <div class="container mt-3">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold text-white">Nombre del artículo</label>
+                                    <input  name="Titulo" class="form-control" />
+                                    
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-9">
+                                    <label  class="form-label fw-bold text-white">Descripción del artículo</label>
+                                    <br>
+                                    <textarea name="Texto" rows="5" cols="60"> </textarea> 
+                                   
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label  class="form-label fw-bold text-white">Creado (Fecha)</label>
+                                    <input type="datetime-local" name="Fecha" class="form-control" />                              
+                                </div>
+                            </div>
+    
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label  class="form-label fw-bold text-white">Categoría</label>
+                                    <input  name="Categoria" class="form-control" />                              
+                                </div>
+                            </div>
+    
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label  class="form-label fw-bold text-white">Administrador</label>
+                                    <input  name="Administrador" class="form-control" />                              
+                                </div>
+                            </div>
+            
+                            <button type="submit" class="btn btn-success fw-bold text-white me-1">Crear</button>
+                            <a class="btn btn-secondary fw-bold text-white" href="/Home">Regresar</a>
+                            <!-- <a class="btn btn-success text-white" asp-controller="Categorias" asp-action="Index">Regresar</a> -->
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-9 col-9 mt-5 ms-2">   
+            <h2 class="text-white mb-3">
+                <span class="text-bg-warning text-white pb-1 ps-2 pe-2" style="border-radius:20px; ">Lista de Categorías</span>
+            </h2>                   
+            <table class="table table-light table-striped table-bordered">
+                <thead>
+                    <tr>                          
+                        <th class="text-center text-secondary col-2">ID</th>
+                        <th class="text-center text-secondary col-4">Nombre de la categoría</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in listaCategorias %}
+                    <tr>                               
+                        <th class="text-center">{{item.0}}</th>
+                        <th class="text-center"> {{item.1}}</th>                                                                            
+                    </tr> 
+                    {% endfor %}                                                                 
+                </tbody>
+            </table>                  
+        </div>
+          
+    </div>
+
+
+    
+
+    
+
+
+    <div class="row mt-4">
+        <div class="col-md-6 ms-4">
+            <h2><span class="text-bg-warning text-white pb-1 ps-2 pe-2 " style="border-radius:20px ;">Lista de Articulos</span></h2>
+        </div>
+               
+    </div>
+ 
+    <div class="row mb-5 ms-2 mt-2">
+        <div class="col-xxl-9 col-lg-9 col-md-9 col-sm-9 col-xs-12 col-12">                      
+                <table class="table table-light table-striped table-bordered">
+                    <thead>
+                        <tr>                          
+                            <th class="text-center text-secondary col-2">Titulo</th>
+                            <th class="text-center text-secondary col-4">Descripción</th>
+                            <th class="text-center text-secondary col-1">Creado el día</th>
+                            <th class="text-center text-secondary col-1">Categoría</th>
+                            <th class="text-center text-secondary col-2">Editar/Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in articulos %}
+                        <tr>                               
+                            <th class="text-center">{{item.1}}</th>
+                            <th class="text-center"> {{item.2}}</th>
+                            <th class="text-center"> {{item.3}}</th>
+                            <th class="text-center"> {{item.4}}</th>
+                            <th class="text-center">
+                                <div role="group">
+                                    <a  href="/EditarArticulo/{{item.0}}" class="btn btn-outline-primary mx-1 mb-1"><i class="fa-solid fa-pen"></i> Editar</a>
+                                    <a  href="/EliminarArticulo/{{item.0}}" class="btn btn-outline-danger mx-1"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                                </div>
+                            </th>
+                        </tr> 
+                        {% endfor %}                                                                 
+                    </tbody>
+                </table>    
+            </div>       
+        </div> 
+
+<footer id="footer">
+  <p>© Copyright DT-2022 DatAsk</p>
+</footer>    
+
+</body>
+</html>
