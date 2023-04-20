@@ -18,3 +18,4 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 •	 Emilio Andres Vera https://github.com/evera8
 
 ## Objetivos del trabajo
+Consolidar un equipo con los objetivos claros : Como el aprendizaje, buena comunicacion , lograr conocer y dominar nuevas herramientas digitales.
