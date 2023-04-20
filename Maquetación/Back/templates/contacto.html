@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- css estilos -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/releases/v6.0.0-beta2/js/all.js"></script>
+
+</head>
+
+
+
+<body style="background-image: url(static/css/imagenes/portada_1.jpg);">
+
+  <section>
+    <div class="contacto">
+   
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          
+            <div class="container-fluid">
+              <div class="row">
+                <h1 class="text-warning">Contactanos</h1>
+                <br>
+                <p>Dirección: Av. Cabildo 973 - CBA</p>
+                <p>Teléfono: 114698542</p>
+                <p>Email: data-Info@datask.com</p>
+                <br>
+            </div>
+           
+          </div>
+          <div class="mb-3">          
+            <form method="POST" action="/Contacto" id="form">
+              <div class="container-fluid">
+                <br>
+                <label  class="form-label" style="font-weight:bold">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">     
+                <div class="mb-3 d-grid gap-2">
+                  <label  class="form-label" style="font-weight:bold">Comentarios</label>
+                  <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                  <button type="submit" class="btn btn-warning mt-2 text-white fw-bold" name="button">Enviar</button>
+                  <a class="btn btn-success fw-bold text-white" href="/Home">Regresar</a>
+                  <p class="warnings" id="warnings"></p>
+                </div>
+  
+              </div>
+             
+            </form>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div>
+  
+    </div>
+
+  </section>
+ 
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const email=document.getElementById("email")
+    const comentarios=document.getElementById("comentarios")
+    const form=document.getElementById('form')
+    const parrafo=document.getElementById('warnings')
+
+    form.addEventListener("submit", e=>{
+    e.preventDefault()
+    let warnings=''
+    let ingresar=false
+    let validarEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    parrafo.innerHTML=''
+    if(!validarEmail.test(email.value)){
+        warnings+='-Introduce un email válido <br>'
+        ingresar=true
+    }
+    if(comentarios.value.length<10){
+        warnings+='-Expláyese en su consulta! :) <br>'
+        ingresar=true
+    }
+    if(ingresar)
+    {
+        parrafo.innerHTML=warnings
+    }
+    else{
+        parrafo.innerHTML="Envíado"       
+    }       
+})
+   </script>
+  
+</body>
+</html>
