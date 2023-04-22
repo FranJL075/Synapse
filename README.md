@@ -26,17 +26,3 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 ## 📝Objetivos del trabajo
 Consolidar un equipo con los objetivos claros : Como el aprendizaje, buena comunicacion , lograr conocer y dominar nuevas herramientas digitales.
-
-## ✅ Manejo de la App
-_Próximamente_
-
-## ⌨🖱 Instalación
-- Si queremos correr la aplicación en un entorno local debemos: 
-
-1. Clonar el repositorio utilizando GIT o descargando el archivo ZIP:
-
-    `git clone 
-    
-### ✨ Contributors
-
-
