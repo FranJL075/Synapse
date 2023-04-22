@@ -35,8 +35,8 @@ _Próximamente_
 
 1. Clonar el repositorio utilizando GIT o descargando el archivo ZIP:
 
-    `git clone https://github.com/MarcofCorrea/ProyectoFullstack.git`
+    `git clone 
     
 ### ✨ Contributors
 
-[![Contributors]
+
