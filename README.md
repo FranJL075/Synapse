@@ -24,5 +24,19 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 •	 Emilio Andres Vera https://github.com/evera8
 
-## Objetivos del trabajo
+## 📝Objetivos del trabajo
 Consolidar un equipo con los objetivos claros : Como el aprendizaje, buena comunicacion , lograr conocer y dominar nuevas herramientas digitales.
+
+## ✅ Manejo de la App
+_Próximamente_
+
+## ⌨🖱 Instalación
+- Si queremos correr la aplicación en un entorno local debemos: 
+
+1. Clonar el repositorio utilizando GIT o descargando el archivo ZIP:
+
+    `git clone https://github.com/MarcofCorrea/ProyectoFullstack.git`
+    
+### ✨ Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=MarcofCorrea/ProyectoFullstack)](https://github.com/MarcofCorrea/ProyectoFullstack/graphs/contributors)
