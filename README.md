@@ -39,4 +39,4 @@ _Próximamente_
     
 ### ✨ Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=MarcofCorrea/ProyectoFullstack)](https://github.com/MarcofCorrea/ProyectoFullstack/graphs/contributors)
+[![Contributors]
