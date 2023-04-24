@@ -26,3 +26,9 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 ## 📝Objetivos del trabajo
 Consolidar un equipo con los objetivos claros : Como el aprendizaje, buena comunicacion , lograr conocer y dominar nuevas herramientas digitales.
+
+
+## 📝Anexo: Proyecto Final del Año pasado.
+
+https://programaelfuturo.com/home/
+
