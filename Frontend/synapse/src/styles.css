@@ -1,1 +1,263 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  min-height: 100%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* Validadciones */
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #08ffc8;
+  font-weight: 400;
+}
+
+.container {
+  padding: 0% 5% 20%;
+}
+
+#titulo {
+  background-image: url(./imagenes/portada_1.jpg);
+  background-repeat: no-repeat;
+}
+
+#titulo h1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 4em;
+  line-height: 1.4;
+  padding-top: 160px;
+  color: #f6f6f6;
+}
+
+.navbar-titulo {
+  color: #fbd341;
+}
+
+#navbarCollapse a {
+  font-size: 1.2rem;
+  color: #eef1ff;
+  font-weight: bold;
+}
+
+#navbar-menu a {
+  font-size: 1.2rem;
+  color: #eef1ff;
+  font-weight: bold;
+}
+
+#titulo a:hover {
+  color: #a5f1e9;
+}
+
+.navbar-brand {
+  font-family: Ubuntu;
+}
+
+.navbar-brand:hover {
+  color: #ffce45;
+}
+
+.nav-item {
+  margin: 0px 18px 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-weight: light;
+  font-size: 1.2rem;
+}
+
+.titulos-caracteristicas {
+  padding: 0 5% 0 5%;
+}
+
+/* CARACTERISTICAS */
+#caracteristicas {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+}
+
+#caracteristicas h3 {
+  font-weight: bold;
+  background-color: #a5f1e9;
+  border-radius: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  color: #002e94;
+}
+
+#caracteristicas p {
+  color: #1f4690;
+  font-weight: bold;
+}
+
+.iconos-caracteristicas {
+  font-size: 80px;
+  color: #002e94;
+  padding-bottom: 15px;
+}
+
+.iconos-caracteristicas:hover {
+  color: #1746a2;
+}
+
+/* carrousel */
+#carrousel {
+  text-align: center;
+  background-color: #3a5ba0;
+}
+
+#carrousel img {
+  margin-top: 30px;
+  width: 60%;
+  margin: 50px;
+}
+
+#carrousel h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  color: #fff;
+}
+
+.carousel-item {
+  padding: 2% 6%;
+}
+
+/* Blog/secciones */
+.publicacion p {
+  margin: 0px;
+  color: #5a6169;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 10px 10px 10px;
+}
+
+#blog {
+  padding-top: 70px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+#blog container {
+  padding-bottom: 10px;
+}
+
+#blog img {
+  width: 80%;
+  height: 80%;
+}
+
+#blog h3 {
+  font-size: 2em;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.boton-blog {
+  background-color: #3a5ba0;
+}
+
+/* Ingresar */
+
+.formulario-ingreso {
+  width: 450px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#inicio-boton button:hover {
+  color: #64bde1;
+}
+
+/* Registrarse */
+
+/* CONTACTO */
+
+.contacto {
+  color: #fff;
+  padding: 1% 1%;
+}
+
+.contacto h1 {
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+/* Footer */
+#footer {
+  background-color: #1eae98;
+  text-align: center;
+  color: #fff;
+}
+
+/* CSS RESPONSIVE */
+@media (max-width: 580px) {
+  .formulario-ingreso {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contenido {
+    font-size: 10px;
+  }
+  .titulo {
+    font-size: 16px;
+  }
+}
+
+/* Por debajo de 400px */
+@media screen and (max-width: 580px) {
+  body {
+    font-size: 7px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
