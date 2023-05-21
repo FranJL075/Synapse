@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Computadora",
+      "text": "Ultima generacion",
+      "price": "$170.000"
+    },
+    {
+      "id": 2,
+      "title": "Celular xiaomi",
+      "text": "RedmiNote",
+      "price": "$70.000"
+    },
+    {
+      "id": 3,
+      "title": "Auriculares",
+      "text": "Inalambricos",
+      "price": "$50.000"
+    },
+    {
+      "id": 4,
+      "title": "Teclado",
+      "text": "Bluetooh",
+      "price": "$30.000"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Suscripcion",
+      "text": "Plan basico",
+      "price": "$70.000"
+    },
+    {
+      "id": 2,
+      "title": "Suscripcion",
+      "text": "Plan plus",
+      "price": "$80.000"
+    },
+    {
+      "id": 3,
+      "title": "Suscripcion",
+      "text": "Plan pro",
+      "price": "$90.000"
+    },
+    {
+      "id": 4,
+      "title": "Suscripcion",
+      "text": "Plan vip",
+      "price": "$100.000"
+    }
+  ]
+}

@@ -1,4 +1,10 @@
-
+<nz-content *ngFor="let card of cards" style="margin: 50px">
+  <nz-card style="width: 300px" nzTitle="{{ card.title }}">
+    <p>{{ card.text }}</p>
+    <p>{{ card.price }}</p>
+  </nz-card>
+</nz-content>
+<!-- 
 <section id="caracteristicas">
     <div class="container-fluid">
       <div class="row titulos-caracteristicas">
@@ -19,4 +25,4 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
