@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'coreapi',
     'knox',
-    'django_rest_passwordreset',
     'gestionVentas',
     
 ]
