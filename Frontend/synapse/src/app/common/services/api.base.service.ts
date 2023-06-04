@@ -26,14 +26,18 @@ export class ApiService {
   /**
    * Realiza un post a la api
    */
-  post(path: string, data: any, showSpinner: boolean = true): Observable<any> {
+  post(
+    path?: string,
+    data?: any,
+    showSpinner: boolean = true
+  ): Observable<any> {
     return this.httpClient.post(`${this.API_ENDPOINT}/${path}`, data);
   }
 
   /**
    * Realiza un put a la api
    */
-  put(path: string, data: any, showSpinner: boolean = true): Observable<any> {
+  put(path?: string, data?: any, showSpinner: boolean = true): Observable<any> {
     return this.httpClient.put(`${this.API_ENDPOINT}/${path}`, data);
   }
 
@@ -41,8 +45,8 @@ export class ApiService {
    * Realiza un delete a la api
    */
   delete(
-    path: string,
-    data: any,
+    path?: string,
+    data?: any,
     showSpinner: boolean = true
   ): Observable<any> {
     return this.httpClient.delete(`${this.API_ENDPOINT}/${path}`, data);
