@@ -36,4 +36,14 @@ export class ApiTestService {
   public register(model: any): Observable<any> {
     return this.api.post(`register`);
   }
+
+  // Agregar articulos
+  public addProducts(model: any): Observable<any> {
+    return this.api.post(`admin/api/articulos`);
+  }
+
+  // Agregar categorias
+  public addCategories(model: any): Observable<any> {
+    return this.api.post(`admin/api/categorias`);
+  }
 }
