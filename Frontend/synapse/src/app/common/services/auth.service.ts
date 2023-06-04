@@ -18,54 +18,54 @@ export class AuthService {
 
   constructor(private route: ActivatedRoute, private router: Router) {
     this.user = new BehaviorSubject<any>(
-      JSON.parse(sessionStorage.getItem('user')!)
+      JSON.parse(localStorage.getItem('user')!)
     );
     this.userId = new BehaviorSubject<any>(
-      JSON.parse(sessionStorage.getItem('userId')!)
+      JSON.parse(localStorage.getItem('userId')!)
     );
     this.token = new BehaviorSubject<any>(
-      JSON.parse(sessionStorage.getItem('token')!)
+      JSON.parse(localStorage.getItem('token')!)
     );
 
     this.permissions = new BehaviorSubject<any>(
-      JSON.parse(sessionStorage.getItem('permissions')!)
+      JSON.parse(localStorage.getItem('permissions')!)
     );
   }
 
   /* Medtodo para setear Token y Obtener */
   public set tokenLS(token: string) {
-    sessionStorage.setItem('token', JSON.stringify(token));
+    localStorage.setItem('token', JSON.stringify(token));
     this.token.next(token);
   }
   public get tokenLS(): string {
-    return JSON.parse(sessionStorage.getItem('token')!);
+    return JSON.parse(localStorage.getItem('token')!);
   }
 
   /* Metodo para setea usuario y obtener */
   public get currentUser(): string {
-    return JSON.parse(sessionStorage.getItem('user')!);
+    return JSON.parse(localStorage.getItem('user')!);
   }
   public set currentUser(user: string) {
-    sessionStorage.setItem('user', JSON.stringify(user));
+    localStorage.setItem('user', JSON.stringify(user));
     this.user.next(user);
     // this.user = new BehaviorSubject<string>(user);
   }
 
   /* Metodo para setea usuario y obtener */
   public get currentUserIds(): string {
-    return JSON.parse(sessionStorage.getItem('userId')!);
+    return JSON.parse(localStorage.getItem('userId')!);
   }
   public set currentUserId(userId: number) {
-    sessionStorage.setItem('userId', JSON.stringify(userId));
+    localStorage.setItem('userId', JSON.stringify(userId));
     this.userId.next(userId);
   }
 
   /* Metodo para setea permisos y obtener */
   public get currentPermissions(): any {
-    return JSON.parse(sessionStorage.getItem('permissions')!);
+    return JSON.parse(localStorage.getItem('permissions')!);
   }
   public set setCurrentPermissions(permissions: any) {
-    sessionStorage.setItem('permissions', JSON.stringify(permissions));
+    localStorage.setItem('permissions', JSON.stringify(permissions));
     this.permissions.next(permissions);
   }
 
@@ -84,12 +84,12 @@ export class AuthService {
     this.router.navigate(['/'], {
       relativeTo: this.route,
     });
-    sessionStorage.removeItem('token');
-    sessionStorage.removeItem('user');
-    sessionStorage.removeItem('userId');
-    sessionStorage.removeItem('menus');
-    sessionStorage.removeItem('dealers');
-    sessionStorage.removeItem('permissions');
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    localStorage.removeItem('userId');
+    localStorage.removeItem('menus');
+    localStorage.removeItem('dealers');
+    localStorage.removeItem('permissions');
     this.token.next(null);
     this.user.next(null);
     this.userId.next(null);
