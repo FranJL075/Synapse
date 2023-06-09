@@ -19,4 +19,4 @@ import { BlogModule } from './blog/blog.module';
     NzCardModule,
   ],
 })
-export class PagesModule {}
+export class PagesModule { }

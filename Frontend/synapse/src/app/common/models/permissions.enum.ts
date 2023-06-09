@@ -1,5 +1,3 @@
-/** @enum: Permisos de roles*/
-export enum Permission {
-  admin = 1,
-  user = 2,
+export interface IDataForm {
+  submitted: boolean;
 }
