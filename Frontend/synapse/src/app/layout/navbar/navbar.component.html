@@ -7,6 +7,17 @@
     <li nz-menu-item>Blog</li>
   </ul>
 </nz-header>
+<nav>
+  <div class="carrito" (click)="onTooglecart()">
+    <div class="navbar-cart-items">
+      <p>0</p>
+    </div>
+    <img src="/assets/imagenes/carrito.jpg">
+  </div>
+</nav>
+<div class="carrito-ap" [ngClass]="{show:viewCart}">
+  <app-carrito></app-carrito>
+</div>
 
 <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-inicio">
   <a class="navbar-brand fs-1 fw-semibold navbar-titulo mt-2" href="#"

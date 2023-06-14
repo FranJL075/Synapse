@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+}
+
+.container-nombre {
+    margin-bottom: 1.5rem;
+
+}
+
+app-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}

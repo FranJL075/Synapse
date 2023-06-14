@@ -1,0 +1,11 @@
+.content {
+    display: block;
+    min-height: calc(100vh - 60px - 40px - 60px);
+    width: 64px;
+    text-align: center;
+
+}
+
+.producto {
+    display: inline-block;
+}

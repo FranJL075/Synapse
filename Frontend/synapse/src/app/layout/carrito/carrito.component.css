@@ -1,0 +1,74 @@
+.imagen {
+    width: 30px;
+    height: 30px;
+}
+
+.producto-carrito-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.producto-carrito {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.producto-body {
+    flex-basis: 50%;
+}
+
+.producto-carrito-total {
+    flex-basis: 20%;
+}
+
+.producto-carrito-buttons {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.producto-body-info {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.producto-carrito-operators {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.producto-carrito-operators span {
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.carrito-total {
+    padding: 1rem;
+}
+
+.carrito-total-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.carrito-btn {
+    width: 50%;
+    align-self: center;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0.75rem 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+}

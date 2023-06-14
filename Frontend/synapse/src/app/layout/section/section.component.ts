@@ -9,7 +9,7 @@ import { ApiTestService } from 'src/services/api-test.service';
 export class SectionComponent implements OnInit {
   cards: any = [];
 
-  constructor(private apiTestService: ApiTestService) {}
+  constructor(private apiTestService: ApiTestService) { }
   ngOnInit(): void {
     this.apiTestService.listPosts().subscribe({
       next: (response) => {
