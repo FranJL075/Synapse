@@ -16,8 +16,6 @@ Somos un Equipo de trabajo del ISPC provenientes de diferentes aulas con el fin 
 
 •	 Jonatan Acuña: https://github.com/yoniea
 
-•	 Daniela Schejtman https://github.com/danielasch00
-
 •	 Aisha Amaya https://github.com/AishaAmaya
 
 •	 Juan Carlos Narvaez https://github.com/ProgramadorPegasus
