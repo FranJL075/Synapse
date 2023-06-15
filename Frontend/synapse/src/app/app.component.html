@@ -1,5 +1,8 @@
 <app-navbar></app-navbar>
 <app-section></app-section>
+<div class="content">
+    <div class="productos" *ngFor="let product of products"><app-productos [product]="product"></app-productos></div>
+</div>
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>

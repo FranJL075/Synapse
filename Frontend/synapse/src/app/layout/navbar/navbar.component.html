@@ -8,6 +8,21 @@
   </ul>
 </nz-header>
 
+<nav>
+  <div class="navbar-title">TIENDA DE PRODUCTOS</div>
+  <div class="navbar-cart" (click)="onToggleCart()">
+    <div class="cart-items">
+      <p>0</p>
+    </div>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</nav>
+<div class="cart" *[ngClass]="{ show:viewCart }">
+  <app-carrito></app-carrito>
+</div>
+
+
+
 <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-inicio">
   <a class="navbar-brand fs-1 fw-semibold navbar-titulo mt-2" href="#"
     >DatAsk</a

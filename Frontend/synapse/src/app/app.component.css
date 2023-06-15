@@ -1,0 +1,12 @@
+.productos {
+    display: inline-block;
+}
+
+.content {
+    display: block;
+    min-height: calc(100vh - 60px - 40px - 60px);
+    width: 64%;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+}

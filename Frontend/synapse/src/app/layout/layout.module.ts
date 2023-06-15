@@ -7,6 +7,8 @@ import { SectionComponent } from './section/section.component';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
+import { CarritoComponent } from './carrito/carrito.component';
+import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { NzCardModule } from 'ng-zorro-antd/card';
     HeaderComponent,
     NavbarComponent,
     SectionComponent,
+    CarritoComponent,
+    ProductosComponent,
   ],
   imports: [CommonModule, NzMenuModule, NzLayoutModule, NzCardModule],
   exports: [
@@ -21,6 +25,8 @@ import { NzCardModule } from 'ng-zorro-antd/card';
     HeaderComponent,
     NavbarComponent,
     SectionComponent,
+    CarritoComponent,
+    ProductosComponent,
   ],
 })
-export class LayoutModule {}
+export class LayoutModule { }

@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+p {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+span {
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+
+button {
+    margin-left: 90px;
+    padding: 5px 10px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
