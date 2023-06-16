@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+
+.bg-color {
+    background: aliceblue;
+    padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containers {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.title::before {
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: white;
+    opacity: .6;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title::after {
+    content: '\f005';
+    font-family: Fontawesome;
+    color: white;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: white;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+
+.title p {
+    color: gray;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 44px;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title h1 span {
+    color: green;
+}
+
+.card {
+    transition: all .2s ease-in-out;
+    border-radius: 3px;
+}
+
+.card-main {
+    position: relative;
+}
+
+.descuento {
+    position: relative;
+    background: yellow;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    height: 30px;
+    width: 70px;
+    border-radius: 0 15px 15px 0;
+    line-height: 30px;
+    font-style: italic;
+    left: -9px;
+    top: 30px;
+}
+
+.descuento::after {
+    border-top: 6px solid #c80;
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-left: 8px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.label {
+    position: absolute;
+    bottom: 84px;
+    left: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 2;
+    line-height: 100%;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 8px;
+}
+
+.label-green {
+    background: rgb(94, 227, 236);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-line {
+    height: 2px;
+    background: #f1f1f1;
+}
+
+.cart-item {
+    text-align: center;
+    line-height: 45px;
+    background: black;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    position: relative;
+    top: -30px;
+}
+
+.cart-item ul {
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item ul li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+.cart-item ul li::after {
+    content: '';
+    width: 1px;
+    height: 18px;
+    background: rgba(255, 255, 255, .15);
+    position: absolute;
+    left: -2px;
+    top: 10px;
+}
+
+.cart-item ul li:first-child:after {
+    display: none;
+}
+
+.cart-item ul li a {
+    padding: 0 18px;
+    color: #ccc;
+}
+
+.cart-item ul li a:hover {
+    color: #fa0;
+}
+
+.card:hover .cart-item {
+    opacity: 1;
+    top: 0;
+}
+
+.product-container {
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    z-index: 4;
+    transition: 0.6s;
+    opacity: 0;
+}
+
+p {
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 2px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.p img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.p img:hover {
+    opacity: 1;
+}
+
+.card:hover .product-container {
+    opacity: 1;
+    right: 10px;
+}
+
+.content {
+    padding: 16px 0;
+    text-align: center;
+}
+
+.content a {
+    font-size: 16px;
+    color: #555;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+.content a:hover {
+    color: #fa0;
+    text-decoration: none;
+}
+
+.rating i {
+    color: #fa0;
+    line-height: 22px;
+    margin: 0 2px;
+    font-size: 12px;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+.content .money {
+    font-size: 20px;
+    color: #fa0;
+    font-weight: 700;
+    font-style: italic;
+    margin-right: 6px;
+}
+
+.content .old-price {
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+    font-weight: 400;
+}
