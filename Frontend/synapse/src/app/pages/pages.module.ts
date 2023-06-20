@@ -6,9 +6,12 @@ import { ProfileModule } from './profile/profile.module';
 import { ProductsModule } from './products/products.module';
 import { MembershipModule } from './membership/membership.module';
 import { BlogModule } from './blog/blog.module';
+import { RegistroComponent } from './registro/registro/registro.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    RegistroComponent
+  ],
   imports: [
     CommonModule,
     LoginModule,

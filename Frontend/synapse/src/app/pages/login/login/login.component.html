@@ -1,47 +1,25 @@
-<form  [formGroup]="formLogin">
-    <div class="row mt-3">
-        <div class="col-md-6 col-12 form-group item-form">
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-                <input formControlName="user" type="email"  id="txtUser" name="txtUser" class="form-control" />
-                <label class="form-label" for="form2Example1">Email address</label>
-                <div *ngIf="dataForm.submitted && formLogin.invalid && $any(f)['user']?.errors">
-                    <div *ngIf="$any(f)['user']?.errors['email']" class="text-danger">
-                        Ingresar un correo válido
-                    </div>
-                    <div *ngIf="$any(f)['user']?.errors['required']" class="text-danger">
-                        Ingrese un correo
-                    </div>
-                    <div *ngIf="$any(f)['user']?.errors['minlength']" class="text-danger">
-                        Ingresar más de 3 caracteres
-                    </div>
-                    <div *ngIf="$any(f)['user']?.errors['maxlength']" class="text-danger">
-                        Ingresar menos de 80 caracteres
-                    </div>
-                </div>
-            </div>
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-                <input formControlName="password" type="password" id="txtPassword" name="txtPassword" class="form-control" />
-                <label class="form-label" for="form2Example2">Password</label>
-                <div *ngIf="dataForm.submitted && formLogin.invalid && $any(f)['password']?.errors">
-                    <div *ngIf="$any(f)['password']?.errors['required']" class="text-danger">
-                        Ingrese una contraseña
-                    </div>
-                    <div *ngIf="$any(f)['password']?.errors['minlength']" class="text-danger">
-                        Ingresar más de 3 caracteres
-                    </div>
-                    <div *ngIf="$any(f)['password']?.errors['maxlength']" class="text-danger">
-                        Ingresar menos de 80 caracteres
-                    </div>
-                </div>
-            </div>
-            <!-- Submit button -->
-            <button type="button" (click)="login()" class="btn btn-primary btn-block mb-4">Sign in</button>
-            <!-- Register buttons -->
-            <div class="text-center">
-                <p>Not a member? <a href="#!">Register</a></p>
-            </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario login</title>
+</head>
+
+<body>
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <div>
+            <label for="username"> Usuario:</label>
+            <input type="text" id="username" name="username" required>
         </div>
-    </div>
-</form>
+        <div>
+            <label for="password"> Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
