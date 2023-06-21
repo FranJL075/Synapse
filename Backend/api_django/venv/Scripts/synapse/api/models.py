@@ -33,6 +33,7 @@ class Ingreso(models.Model):
     impuesto = models.IntegerField(blank= False, default= 0)
     total = models.IntegerField(blank= False, default= 0)
     estado = models.CharField(max_length=20, blank=False)
+    id_usuario = models.ForeignKey(Usuario,to_field="id_usuario",on_delete=models.CASCADE)
     class Meta:
         db_table= "ingreso"
         verbose_name = "total de ingresos"
@@ -47,6 +48,7 @@ class Detalle_ingreso(models.Model):
     id_detalleingreso=models.AutoField(primary_key=True)
     cantidad = models.CharField(max_length=100, blank=False)
     precio = models.IntegerField(blank= False, default= 0)
+    id_ingreso = models.ForeignKey(Ingreso,to_field="id_ingreso",on_delete=models.CASCADE)
     class Meta:
         db_table= "detalle del ingreso"
         verbose_name = "cantidad de ingresos"
@@ -64,6 +66,7 @@ class Articulo(models.Model):
     descripcion = models.CharField(max_length=300, blank=False)
     imagen = models.ImageField(blank=' ', default=' ',upload_to="media/")
     estado = models.CharField(max_length=30, blank=False)
+    id_detalleingreso = models.ForeignKey(Detalle_ingreso,to_field="id_detalleingreso",on_delete=models.CASCADE)
     class Meta:
         db_table= "articulo"
         verbose_name = "nombre de los articulos"
@@ -79,6 +82,7 @@ class Categoria(models.Model):
     nombre = models.CharField(max_length=100, blank=False)
     descripcion = models.CharField(max_length=300, blank=False)
     estado = models.CharField(max_length=20, blank=False)
+    codigo = models.ForeignKey(Articulo,to_field="codigo",on_delete=models.CASCADE)
     class Meta:
         db_table= "categoria"
         verbose_name = "nombre de las categorias"
@@ -98,6 +102,7 @@ class Persona(models.Model):
     cuit = models.CharField(max_length=100, blank=False)
     direccion = models.CharField(max_length=100, blank=False)
     telefono = models.CharField(max_length=100, blank=False)
+    id_usuario = models.ForeignKey(Usuario,to_field="id_usuario",on_delete=models.CASCADE)
     class Meta:
         db_table= "persona"
         verbose_name = "registro de las personas"
@@ -118,6 +123,7 @@ class Venta(models.Model):
     impuesto = models.IntegerField(blank= False, default= 0)
     total = models.IntegerField(blank= False, default= 0)
     estado = models.CharField(max_length=20, blank=False)
+    id_Persona = models.ForeignKey(Persona,to_field="id_persona",on_delete=models.CASCADE)
     class Meta:
         db_table= "venta"
         verbose_name = "cantidad de ventas"
@@ -134,6 +140,7 @@ class Detalle_venta(models.Model):
     cantidad = models.CharField(max_length=100, blank=False)
     precio = models.IntegerField(blank= False, default= 0)
     descuento = models.IntegerField(blank= False, default= 0)
+    id_venta = models.ForeignKey(Venta,to_field="id_venta",on_delete=models.CASCADE)
     class Meta:
         db_table= "detalle de venta"
         verbose_name = "cantidad de ventas"
