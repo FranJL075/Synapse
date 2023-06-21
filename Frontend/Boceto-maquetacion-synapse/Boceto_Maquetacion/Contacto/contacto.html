@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../imagenes/logo.png" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <link rel="stylesheet" href="../registro.css" />
+    <link rel="stylesheet" type="text/css" href="./contacto.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+Syloti+Nagri&family=Roboto:wght@100;400&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+Syloti+Nagri&family=Roboto:wght@100;400&family=Ubuntu&display=swap');
+    </style>
+    <title>Synapse</title>
+</head>
+
+<body>
+    <main>
+    <header class="cabezera">
+        <img class="logo" src="../imagenes/logo.png" />
+        <nav class="menu_lista">
+            <li class="menu__item"><a class="menu__link" id="inicio" href="../index.html">INICIO</li></a></li>
+            <li class="menu__item"><a class="menu__link">SERVICIOS</a></li>
+            <li class="menu__item"><a class="menu__link">PLANES</a></li>
+            <li class="menu__item"id="contacto"><a class="menu__link">CONTACTO</a></li>
+            <li class="menu__item"><a class="menu__link">INICIAR SESION</a></li>
+            <li class="menu__item" id="registro"><a class="menu__link" id="registro"href="../registro.html">REGISTRO</a></li>
+        </nav>
+
+    </header>
+<section>
+<title>Formulario de contacto</title>
+
+
+	<div class="contact_form">
+
+		<div class="formulario">			
+            <h1>Formulario de contacto</h1>
+				<h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+								</p>		
+							
+								<p>
+									<label for="website" class="colocar_website">Sitio web
+									</label>
+										<input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+								</p>		
+							
+								<p>
+									<label for="asunto" class="colocar_asunto">Asunto
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+								</p>		
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	 </p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+								<p class="aviso">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>					
+						
+				</form>
+		</div>	
+	</div>
+    </section>
+    </main>
+
+    <footer>
+
+        <div class="container-footer-all">
+
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>Mas informacion de la compañia</h1>
+
+                    <p>Esta pagina esta realizada por estudiantes del instituto
+                        superior politecnico de cordoba para fines educativos .</p>
+                    </p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <img src="../imagenes/imagen-facebok.png">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row">
+                        <img src="../imagenes/imagen-twiter.png">
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row">
+                        <img src="../imagenes/imagen-instagram.png">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+
+
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Informacion Contactos</h1>
+
+                    <div class="row2">
+                        <img src="../imagenes/imegen-house.png">
+                        <label>Cordoba-Capital</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="../imagenes/imagen-celular.png">
+                        <label>xxxx-xxxx</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyright">
+                    © 2023 Todos los Derechos Reservados | <a>SYNAPSE</a>
+                </div>
+
+                <div class="information">
+                    <a href="#">Informacion Compañia</a> | <a href="#">Privacion y Politica</a> | <a href="#">Terminos
+                        y Condiciones</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="./contacto.js"></script
+</body>
+
+</html>
