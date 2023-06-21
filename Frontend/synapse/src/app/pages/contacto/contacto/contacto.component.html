@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <h1>Contactenos</h1>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <input
+            type="text"
+        name="nombreapellido"
+        placeholder="Escribe tu nombre"
+        formControlName="fullName"
+        />
+        <br />
+    
+        <input
+        type="email"
+        name="email"
+        placeholder="Escribe tu mail "
+        formControlName="email"
+        />
+        <br />
+        <input
+        type="telefono"
+        name="telefono"
+        placeholder="Escribe tu telefono "
+        formControlName="telefono"
+        />
+        <br />
+        <textarea
+        name="mensaje"
+        placeholder="Escribe tu mensaje"
+        formControlName="mensaje"
+        ></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+    </form>
+    
+
+                </html>
