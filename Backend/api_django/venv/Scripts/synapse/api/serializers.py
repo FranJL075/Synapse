@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Usuario, Ingreso, Articulo, Categoria, Venta
+from .models import Usuario, Ingreso, Articulo, Categoria, Venta, Persona, Detalle_ingreso, Detalle_venta
 from rest_framework import serializers,validators
 from django.contrib.auth.models import User
 
@@ -69,4 +69,19 @@ class CategoriaSerializer(serializers.ModelSerializer):
 class VentaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Venta
+        fields = '__all__'
+        
+class Detalle_ingresoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Detalle_ingreso
+        fields = '__all__'
+        
+class PersonaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Persona
+        fields = '__all__'
+        
+class Detalle_ventaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Detalle_venta
         fields = '__all__'
